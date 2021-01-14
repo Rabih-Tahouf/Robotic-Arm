@@ -15,14 +15,14 @@ The robot is firstly programmed to wait for an object to come on the conveyer, i
 
 # Program Procedure:
 
-1-	The robot and the computer are turned on.
-2-	The software is launched “Circos”
-3-	A small code is generated to test the logic 
-4-	The code is downloaded to the robot
-5-	The undefined positions in the code are specified after switching the robot to the teaching mode. In the teaching mode, the robot is no longer controlled by the computer, it is controlled manually by the teach pendant, in order to specify the position and orientation of each point in the computer.
-6-	The taught positions and orientations are uploaded back to the computer. Now, the code in the computer can be understood by the robot, and it will do the required task.
-7-	The program is run to check if everything is going as desired.
-8-	The steps 3 to 7 are repeated until the code is finished.
+1. The robot and the computer are turned on.
+2. The software is launched “Circos”
+3. A small code is generated to test the logic 
+4. The code is downloaded to the robot
+5. The undefined positions in the code are specified after switching the robot to the teaching mode. In the teaching mode, the robot is no longer controlled by the computer, it is controlled manually by the teach pendant, in order to specify the position and orientation of each point in the computer.
+6. The taught positions and orientations are uploaded back to the computer. Now, the code in the computer can be understood by the robot, and it will do the required task.
+7. The program is run to check if everything is going as desired.
+8. The steps 3 to 7 are repeated until the code is finished.
 
 
 
