@@ -1,0 +1,62 @@
+
+MoveMaster language 
+
+
+10 OVRD 30
+20 MOV PHOM
+30 HOPEN 1                                     // Open the end effector
+40 WAIT M_IN(8)=1                      // Wait for sensor 8 to sense an object, then perform action
+50 MOV P11, -50                           // -50 implies above point P11 by 50 mm
+60 MVS P11, +3
+70 DLY 1                                        // Delay execution of next command by one second
+80 HCLOSE 1                                // Close the end effector
+90 MVS P11, -10
+100 MOV PHOM
+110 MOV P22, -50
+120 MVS P22
+130 DLY 0.5
+140 MOV P33 WTHIF M_IN(10)=0, SKIP  //move to p33 with condition of sensor seeing the hole 
+150 DLY 0.5
+160 P44.A=P_CURR.A                       // maintain orientation 
+170 P44.A=P44.A + 0.61                  // change orientation by 0.61 radians clockwise from current
+180 MOV P44
+190 DLY 1
+200 MVS P44, +11
+210 DLY 1
+220 HOPEN 1
+230 DLY 1
+240 MOV P66, -15
+250 MVS P66, 1
+260 DLY 3 
+270 IF M_IN(9)=1 THEN                  // if sensor 9 sees an object (cap) execute the then condition
+280 MOV P66, -30
+290 MOV P55, -30
+300 MOV P55
+310 DLY 1
+320 HCLOSE 1
+330 DLY 1
+340 MVS P55, -30
+350 MOV PHOM
+360 MOV P77, -15
+370 MVS P77, -2
+380 DLY 1
+390 HOPEN 1
+400 MVS P77, -15
+410 MVS PHOM
+420 ELSE          // if sensor 9 doesn’t see an object (cap) execute the following condition
+430 MOV P66, -30
+440 MOV P55, -30
+450 MOV P55, -2
+460 DLY 1
+470 HCLOSE 1
+480 DLY 1
+490 MVS P55, -30
+500 MOV PHOM
+510 MOV P77, -30
+520 MOV P88, -60
+530 MVS P88, 10
+540 DLY 1
+550 HOPEN 1
+560 MVS P88, -60
+570 MOV PHOM
+580 ENDIF  // end the if condition
