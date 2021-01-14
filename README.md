@@ -24,5 +24,7 @@ The robot is firstly programmed to wait for an object to come on the conveyer, i
 7. The program is run to check if everything is going as desired.
 8. The steps 3 to 7 are repeated until the code is finished.
 
+# Program logic:
 
+![alt text](https://github.com/Rabih-Tahouf/Bank-Customer-Churn-Modeling/blob/main/Program%20flow.jpg)
 
