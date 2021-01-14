@@ -26,5 +26,5 @@ The robot is firstly programmed to wait for an object to come on the conveyer, i
 
 # Program logic:
 
-![alt text](https://github.com/Rabih-Tahouf/Bank-Customer-Churn-Modeling/blob/main/Program%20flow.jpg)
+![alt text](https://github.com/Rabih-Tahouf/Robotic-Arm/blob/main/Program%20Architecture.jpg)
 
