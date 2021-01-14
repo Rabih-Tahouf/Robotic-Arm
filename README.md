@@ -1,6 +1,7 @@
 # Robotic-Arm
 
 Program the industrial robot (Mitsubishi MELFA RV-2AJ) to perform a simple industrial task.  
+Video Demonstration: https://drive.google.com/file/d/1ESsd7e1LMePoNf8_xQvZqT_W42ccoyQs/view?usp=sharing
 
 # About the robotic arm:
 
